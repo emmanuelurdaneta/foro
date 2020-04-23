@@ -1,13 +1,8 @@
 <?php
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
+class ExampleTest extends FeatureTestCase
 {
-    
-    use DatabaseTransactions;
     
     /**
      * A basic functional test example.
@@ -15,7 +10,7 @@ class ExampleTest extends TestCase
      * @return void
      */    
     
-    public function testBasicExample()
+    function test_basic_example()
     {
 //         $this->visit('/')
 //              ->see('Laravel');
